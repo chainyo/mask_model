@@ -58,10 +58,12 @@ while(True):
 
     cv2.imshow('img', img)
 
-    # On définit une touche pour fermer l'application
+    # On définit une touche pour fermer l'application et prendre une photo
     k = cv2.waitKey(30) & 0xff
     if k==27: # touche 'ESC' pour fermer l'application
         break
+    if k==32: # touche 'SPACE'
+        cv2.imwrite("capture.png", img)
 
 # On detruit l'objet vidéo instancié et on ferme toutes les fenêtres
 video.release()
