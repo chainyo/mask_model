@@ -32,3 +32,8 @@ Pour tester l'application de la détection du masque en temps réel :
 - Télécharger le modèle sur le lien ci-dessus
 - Executer le fichier `real_time.py` dans le `cmd`, à l'aide de la commande suivante : `python3 real_time.py`
 - Pour fermer l'application, il faut fermer le `cmd` ou appuyer sur la touche `ESC`
+
+### Pré-requis
+
+- `pip install pydub`
+- installer [ffmpeg](https://ffmpeg.org/download.html)
